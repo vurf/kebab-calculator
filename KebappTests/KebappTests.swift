@@ -1,13 +1,13 @@
 //
-//  KebabCalculatorTests.swift
-//  KebabCalculatorTests
+//  KebappTests.swift
+//  KebappTests
 //
-//  Created by Илья Варфоломеев on 31.05.2024.
+//  Created by Илья Варфоломеев on 07.06.2024.
 //
 
 import XCTest
 
-final class KebabCalculatorTests: XCTestCase {
+final class KebappTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

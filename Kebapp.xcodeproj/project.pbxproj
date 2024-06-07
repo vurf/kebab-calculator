@@ -7,70 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		169F475C2C09C7AC000273C5 /* KebabCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F475B2C09C7AC000273C5 /* KebabCalculatorApp.swift */; };
-		169F475E2C09C7AC000273C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F475D2C09C7AC000273C5 /* ContentView.swift */; };
-		169F47602C09C7AD000273C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169F475F2C09C7AD000273C5 /* Assets.xcassets */; };
-		169F47642C09C7AD000273C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169F47632C09C7AD000273C5 /* Preview Assets.xcassets */; };
-		169F476E2C09C7AE000273C5 /* KebabCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F476D2C09C7AE000273C5 /* KebabCalculatorTests.swift */; };
-		169F47782C09C7AE000273C5 /* KebabCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F47772C09C7AE000273C5 /* KebabCalculatorUITests.swift */; };
-		169F477A2C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F47792C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift */; };
-		16A734DB2C0E3D3300CA6EA9 /* PeopleCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734DA2C0E3D3300CA6EA9 /* PeopleCountView.swift */; };
-		16A734DD2C0E3DBB00CA6EA9 /* DurationTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734DC2C0E3DBB00CA6EA9 /* DurationTimeView.swift */; };
-		16A734DF2C0E3E5900CA6EA9 /* MeatTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734DE2C0E3E5900CA6EA9 /* MeatTypeView.swift */; };
-		16A734E22C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734E12C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift */; };
+		16ECD85C2C13613000112840 /* KebappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD85B2C13613000112840 /* KebappApp.swift */; };
+		16ECD85E2C13613000112840 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD85D2C13613000112840 /* ContentView.swift */; };
+		16ECD8602C13613100112840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16ECD85F2C13613100112840 /* Assets.xcassets */; };
+		16ECD8642C13613100112840 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16ECD8632C13613100112840 /* Preview Assets.xcassets */; };
+		16ECD86E2C13613100112840 /* KebappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD86D2C13613100112840 /* KebappTests.swift */; };
+		16ECD8782C13613100112840 /* KebappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8772C13613100112840 /* KebappUITests.swift */; };
+		16ECD87A2C13613100112840 /* KebappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8792C13613100112840 /* KebappUITestsLaunchTests.swift */; };
+		16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8862C1361ED00112840 /* CheckboxToggleStyle.swift */; };
+		16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8882C1361ED00112840 /* DurationTimeView.swift */; };
+		16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8892C1361ED00112840 /* MeatTypeView.swift */; };
+		16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD88A2C1361ED00112840 /* PeopleCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		169F476A2C09C7AE000273C5 /* PBXContainerItemProxy */ = {
+		16ECD86A2C13613100112840 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 169F47502C09C7AC000273C5 /* Project object */;
+			containerPortal = 16ECD8502C13613000112840 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 169F47572C09C7AC000273C5;
-			remoteInfo = KebabCalculator;
+			remoteGlobalIDString = 16ECD8572C13613000112840;
+			remoteInfo = Kebapp;
 		};
-		169F47742C09C7AE000273C5 /* PBXContainerItemProxy */ = {
+		16ECD8742C13613100112840 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 169F47502C09C7AC000273C5 /* Project object */;
+			containerPortal = 16ECD8502C13613000112840 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 169F47572C09C7AC000273C5;
-			remoteInfo = KebabCalculator;
+			remoteGlobalIDString = 16ECD8572C13613000112840;
+			remoteInfo = Kebapp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		169F47582C09C7AC000273C5 /* KebabCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KebabCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		169F475B2C09C7AC000273C5 /* KebabCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorApp.swift; sourceTree = "<group>"; };
-		169F475D2C09C7AC000273C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		169F475F2C09C7AD000273C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		169F47612C09C7AD000273C5 /* KebabCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KebabCalculator.entitlements; sourceTree = "<group>"; };
-		169F47632C09C7AD000273C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		169F47692C09C7AE000273C5 /* KebabCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebabCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		169F476D2C09C7AE000273C5 /* KebabCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorTests.swift; sourceTree = "<group>"; };
-		169F47732C09C7AE000273C5 /* KebabCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebabCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		169F47772C09C7AE000273C5 /* KebabCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorUITests.swift; sourceTree = "<group>"; };
-		169F47792C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		16A734DA2C0E3D3300CA6EA9 /* PeopleCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCountView.swift; sourceTree = "<group>"; };
-		16A734DC2C0E3DBB00CA6EA9 /* DurationTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationTimeView.swift; sourceTree = "<group>"; };
-		16A734DE2C0E3E5900CA6EA9 /* MeatTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTypeView.swift; sourceTree = "<group>"; };
-		16A734E12C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		16ECD8582C13613000112840 /* Kebapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kebapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16ECD85B2C13613000112840 /* KebappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebappApp.swift; sourceTree = "<group>"; };
+		16ECD85D2C13613000112840 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16ECD85F2C13613100112840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16ECD8612C13613100112840 /* Kebapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kebapp.entitlements; sourceTree = "<group>"; };
+		16ECD8632C13613100112840 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16ECD8692C13613100112840 /* KebappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16ECD86D2C13613100112840 /* KebappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebappTests.swift; sourceTree = "<group>"; };
+		16ECD8732C13613100112840 /* KebappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16ECD8772C13613100112840 /* KebappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebappUITests.swift; sourceTree = "<group>"; };
+		16ECD8792C13613100112840 /* KebappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16ECD8862C1361ED00112840 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		16ECD8882C1361ED00112840 /* DurationTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTimeView.swift; sourceTree = "<group>"; };
+		16ECD8892C1361ED00112840 /* MeatTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatTypeView.swift; sourceTree = "<group>"; };
+		16ECD88A2C1361ED00112840 /* PeopleCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		169F47552C09C7AC000273C5 /* Frameworks */ = {
+		16ECD8552C13613000112840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		169F47662C09C7AE000273C5 /* Frameworks */ = {
+		16ECD8662C13613100112840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		169F47702C09C7AE000273C5 /* Frameworks */ = {
+		16ECD8702C13613100112840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,163 +80,163 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		169F474F2C09C7AC000273C5 = {
+		16ECD84F2C13613000112840 = {
 			isa = PBXGroup;
 			children = (
-				169F475A2C09C7AC000273C5 /* KebabCalculator */,
-				169F476C2C09C7AE000273C5 /* KebabCalculatorTests */,
-				169F47762C09C7AE000273C5 /* KebabCalculatorUITests */,
-				169F47592C09C7AC000273C5 /* Products */,
+				16ECD85A2C13613000112840 /* Kebapp */,
+				16ECD86C2C13613100112840 /* KebappTests */,
+				16ECD8762C13613100112840 /* KebappUITests */,
+				16ECD8592C13613000112840 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		169F47592C09C7AC000273C5 /* Products */ = {
+		16ECD8592C13613000112840 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				169F47582C09C7AC000273C5 /* KebabCalculator.app */,
-				169F47692C09C7AE000273C5 /* KebabCalculatorTests.xctest */,
-				169F47732C09C7AE000273C5 /* KebabCalculatorUITests.xctest */,
+				16ECD8582C13613000112840 /* Kebapp.app */,
+				16ECD8692C13613100112840 /* KebappTests.xctest */,
+				16ECD8732C13613100112840 /* KebappUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		169F475A2C09C7AC000273C5 /* KebabCalculator */ = {
+		16ECD85A2C13613000112840 /* Kebapp */ = {
 			isa = PBXGroup;
 			children = (
-				16A734E02C0E3E9600CA6EA9 /* Styles */,
-				16A734D92C0E3D1A00CA6EA9 /* Subviews */,
-				169F475D2C09C7AC000273C5 /* ContentView.swift */,
-				169F475B2C09C7AC000273C5 /* KebabCalculatorApp.swift */,
-				169F475F2C09C7AD000273C5 /* Assets.xcassets */,
-				169F47612C09C7AD000273C5 /* KebabCalculator.entitlements */,
-				169F47622C09C7AD000273C5 /* Preview Content */,
+				16ECD8872C1361ED00112840 /* Styles */,
+				16ECD88B2C1361ED00112840 /* Subviews */,
+				16ECD85B2C13613000112840 /* KebappApp.swift */,
+				16ECD85D2C13613000112840 /* ContentView.swift */,
+				16ECD85F2C13613100112840 /* Assets.xcassets */,
+				16ECD8612C13613100112840 /* Kebapp.entitlements */,
+				16ECD8622C13613100112840 /* Preview Content */,
 			);
-			path = KebabCalculator;
+			path = Kebapp;
 			sourceTree = "<group>";
 		};
-		169F47622C09C7AD000273C5 /* Preview Content */ = {
+		16ECD8622C13613100112840 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				169F47632C09C7AD000273C5 /* Preview Assets.xcassets */,
+				16ECD8632C13613100112840 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		169F476C2C09C7AE000273C5 /* KebabCalculatorTests */ = {
+		16ECD86C2C13613100112840 /* KebappTests */ = {
 			isa = PBXGroup;
 			children = (
-				169F476D2C09C7AE000273C5 /* KebabCalculatorTests.swift */,
+				16ECD86D2C13613100112840 /* KebappTests.swift */,
 			);
-			path = KebabCalculatorTests;
+			path = KebappTests;
 			sourceTree = "<group>";
 		};
-		169F47762C09C7AE000273C5 /* KebabCalculatorUITests */ = {
+		16ECD8762C13613100112840 /* KebappUITests */ = {
 			isa = PBXGroup;
 			children = (
-				169F47772C09C7AE000273C5 /* KebabCalculatorUITests.swift */,
-				169F47792C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift */,
+				16ECD8772C13613100112840 /* KebappUITests.swift */,
+				16ECD8792C13613100112840 /* KebappUITestsLaunchTests.swift */,
 			);
-			path = KebabCalculatorUITests;
+			path = KebappUITests;
 			sourceTree = "<group>";
 		};
-		16A734D92C0E3D1A00CA6EA9 /* Subviews */ = {
+		16ECD8872C1361ED00112840 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				16A734DA2C0E3D3300CA6EA9 /* PeopleCountView.swift */,
-				16A734DC2C0E3DBB00CA6EA9 /* DurationTimeView.swift */,
-				16A734DE2C0E3E5900CA6EA9 /* MeatTypeView.swift */,
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
-		16A734E02C0E3E9600CA6EA9 /* Styles */ = {
-			isa = PBXGroup;
-			children = (
-				16A734E12C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift */,
+				16ECD8862C1361ED00112840 /* CheckboxToggleStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		16ECD88B2C1361ED00112840 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				16ECD8882C1361ED00112840 /* DurationTimeView.swift */,
+				16ECD8892C1361ED00112840 /* MeatTypeView.swift */,
+				16ECD88A2C1361ED00112840 /* PeopleCountView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		169F47572C09C7AC000273C5 /* KebabCalculator */ = {
+		16ECD8572C13613000112840 /* Kebapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 169F477D2C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculator" */;
+			buildConfigurationList = 16ECD87D2C13613100112840 /* Build configuration list for PBXNativeTarget "Kebapp" */;
 			buildPhases = (
-				169F47542C09C7AC000273C5 /* Sources */,
-				169F47552C09C7AC000273C5 /* Frameworks */,
-				169F47562C09C7AC000273C5 /* Resources */,
+				16ECD8542C13613000112840 /* Sources */,
+				16ECD8552C13613000112840 /* Frameworks */,
+				16ECD8562C13613000112840 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KebabCalculator;
-			productName = KebabCalculator;
-			productReference = 169F47582C09C7AC000273C5 /* KebabCalculator.app */;
+			name = Kebapp;
+			productName = Kebapp;
+			productReference = 16ECD8582C13613000112840 /* Kebapp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		169F47682C09C7AE000273C5 /* KebabCalculatorTests */ = {
+		16ECD8682C13613100112840 /* KebappTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 169F47802C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorTests" */;
+			buildConfigurationList = 16ECD8802C13613100112840 /* Build configuration list for PBXNativeTarget "KebappTests" */;
 			buildPhases = (
-				169F47652C09C7AE000273C5 /* Sources */,
-				169F47662C09C7AE000273C5 /* Frameworks */,
-				169F47672C09C7AE000273C5 /* Resources */,
+				16ECD8652C13613100112840 /* Sources */,
+				16ECD8662C13613100112840 /* Frameworks */,
+				16ECD8672C13613100112840 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				169F476B2C09C7AE000273C5 /* PBXTargetDependency */,
+				16ECD86B2C13613100112840 /* PBXTargetDependency */,
 			);
-			name = KebabCalculatorTests;
-			productName = KebabCalculatorTests;
-			productReference = 169F47692C09C7AE000273C5 /* KebabCalculatorTests.xctest */;
+			name = KebappTests;
+			productName = KebappTests;
+			productReference = 16ECD8692C13613100112840 /* KebappTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		169F47722C09C7AE000273C5 /* KebabCalculatorUITests */ = {
+		16ECD8722C13613100112840 /* KebappUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 169F47832C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorUITests" */;
+			buildConfigurationList = 16ECD8832C13613100112840 /* Build configuration list for PBXNativeTarget "KebappUITests" */;
 			buildPhases = (
-				169F476F2C09C7AE000273C5 /* Sources */,
-				169F47702C09C7AE000273C5 /* Frameworks */,
-				169F47712C09C7AE000273C5 /* Resources */,
+				16ECD86F2C13613100112840 /* Sources */,
+				16ECD8702C13613100112840 /* Frameworks */,
+				16ECD8712C13613100112840 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				169F47752C09C7AE000273C5 /* PBXTargetDependency */,
+				16ECD8752C13613100112840 /* PBXTargetDependency */,
 			);
-			name = KebabCalculatorUITests;
-			productName = KebabCalculatorUITests;
-			productReference = 169F47732C09C7AE000273C5 /* KebabCalculatorUITests.xctest */;
+			name = KebappUITests;
+			productName = KebappUITests;
+			productReference = 16ECD8732C13613100112840 /* KebappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		169F47502C09C7AC000273C5 /* Project object */ = {
+		16ECD8502C13613000112840 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					169F47572C09C7AC000273C5 = {
+					16ECD8572C13613000112840 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					169F47682C09C7AE000273C5 = {
+					16ECD8682C13613100112840 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 169F47572C09C7AC000273C5;
+						TestTargetID = 16ECD8572C13613000112840;
 					};
-					169F47722C09C7AE000273C5 = {
+					16ECD8722C13613100112840 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 169F47572C09C7AC000273C5;
+						TestTargetID = 16ECD8572C13613000112840;
 					};
 				};
 			};
-			buildConfigurationList = 169F47532C09C7AC000273C5 /* Build configuration list for PBXProject "KebabCalculator" */;
+			buildConfigurationList = 16ECD8532C13613000112840 /* Build configuration list for PBXProject "Kebapp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -244,36 +244,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 169F474F2C09C7AC000273C5;
-			productRefGroup = 169F47592C09C7AC000273C5 /* Products */;
+			mainGroup = 16ECD84F2C13613000112840;
+			productRefGroup = 16ECD8592C13613000112840 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				169F47572C09C7AC000273C5 /* KebabCalculator */,
-				169F47682C09C7AE000273C5 /* KebabCalculatorTests */,
-				169F47722C09C7AE000273C5 /* KebabCalculatorUITests */,
+				16ECD8572C13613000112840 /* Kebapp */,
+				16ECD8682C13613100112840 /* KebappTests */,
+				16ECD8722C13613100112840 /* KebappUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		169F47562C09C7AC000273C5 /* Resources */ = {
+		16ECD8562C13613000112840 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169F47642C09C7AD000273C5 /* Preview Assets.xcassets in Resources */,
-				169F47602C09C7AD000273C5 /* Assets.xcassets in Resources */,
+				16ECD8642C13613100112840 /* Preview Assets.xcassets in Resources */,
+				16ECD8602C13613100112840 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		169F47672C09C7AE000273C5 /* Resources */ = {
+		16ECD8672C13613100112840 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		169F47712C09C7AE000273C5 /* Resources */ = {
+		16ECD8712C13613100112840 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,53 +283,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		169F47542C09C7AC000273C5 /* Sources */ = {
+		16ECD8542C13613000112840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A734DF2C0E3E5900CA6EA9 /* MeatTypeView.swift in Sources */,
-				16A734DB2C0E3D3300CA6EA9 /* PeopleCountView.swift in Sources */,
-				16A734DD2C0E3DBB00CA6EA9 /* DurationTimeView.swift in Sources */,
-				169F475E2C09C7AC000273C5 /* ContentView.swift in Sources */,
-				16A734E22C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift in Sources */,
-				169F475C2C09C7AC000273C5 /* KebabCalculatorApp.swift in Sources */,
+				16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */,
+				16ECD85E2C13613000112840 /* ContentView.swift in Sources */,
+				16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */,
+				16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */,
+				16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */,
+				16ECD85C2C13613000112840 /* KebappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		169F47652C09C7AE000273C5 /* Sources */ = {
+		16ECD8652C13613100112840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169F476E2C09C7AE000273C5 /* KebabCalculatorTests.swift in Sources */,
+				16ECD86E2C13613100112840 /* KebappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		169F476F2C09C7AE000273C5 /* Sources */ = {
+		16ECD86F2C13613100112840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169F477A2C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift in Sources */,
-				169F47782C09C7AE000273C5 /* KebabCalculatorUITests.swift in Sources */,
+				16ECD8782C13613100112840 /* KebappUITests.swift in Sources */,
+				16ECD87A2C13613100112840 /* KebappUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		169F476B2C09C7AE000273C5 /* PBXTargetDependency */ = {
+		16ECD86B2C13613100112840 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 169F47572C09C7AC000273C5 /* KebabCalculator */;
-			targetProxy = 169F476A2C09C7AE000273C5 /* PBXContainerItemProxy */;
+			target = 16ECD8572C13613000112840 /* Kebapp */;
+			targetProxy = 16ECD86A2C13613100112840 /* PBXContainerItemProxy */;
 		};
-		169F47752C09C7AE000273C5 /* PBXTargetDependency */ = {
+		16ECD8752C13613100112840 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 169F47572C09C7AC000273C5 /* KebabCalculator */;
-			targetProxy = 169F47742C09C7AE000273C5 /* PBXContainerItemProxy */;
+			target = 16ECD8572C13613000112840 /* Kebapp */;
+			targetProxy = 16ECD8742C13613100112840 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		169F477B2C09C7AE000273C5 /* Debug */ = {
+		16ECD87B2C13613100112840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		169F477C2C09C7AE000273C5 /* Release */ = {
+		16ECD87C2C13613100112840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -443,18 +443,16 @@
 			};
 			name = Release;
 		};
-		169F477E2C09C7AE000273C5 /* Debug */ = {
+		16ECD87E2C13613100112840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = KebabCalculator/KebabCalculator.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Kebapp/Kebapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KebabCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F6VBW62Q5Y;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				DEVELOPMENT_ASSET_PATHS = "\"Kebapp/Preview Content\"";
+				DEVELOPMENT_TEAM = F6VBW62Q5Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -473,11 +471,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.kebab.app;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.Kebapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development ru.varfolomeev.kebab.app";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,17 +481,16 @@
 			};
 			name = Debug;
 		};
-		169F477F2C09C7AE000273C5 /* Release */ = {
+		16ECD87F2C13613100112840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = KebabCalculator/KebabCalculator.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Kebapp/Kebapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KebabCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F6VBW62Q5Y;
+				DEVELOPMENT_ASSET_PATHS = "\"Kebapp/Preview Content\"";
+				DEVELOPMENT_TEAM = F6VBW62Q5Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -515,10 +509,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.kebab.app;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.Kebapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore ru.varfolomeev.kebab.app";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -527,7 +519,7 @@
 			};
 			name = Release;
 		};
-		169F47812C09C7AE000273C5 /* Debug */ = {
+		16ECD8812C13613100112840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -539,18 +531,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KebabCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KebabCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kebapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kebapp";
 			};
 			name = Debug;
 		};
-		169F47822C09C7AE000273C5 /* Release */ = {
+		16ECD8822C13613100112840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -562,18 +554,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KebabCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KebabCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kebapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kebapp";
 			};
 			name = Release;
 		};
-		169F47842C09C7AE000273C5 /* Debug */ = {
+		16ECD8842C13613100112840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -584,18 +576,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KebabCalculator;
+				TEST_TARGET_NAME = Kebapp;
 			};
 			name = Debug;
 		};
-		169F47852C09C7AE000273C5 /* Release */ = {
+		16ECD8852C13613100112840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -606,57 +598,57 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KebabCalculator;
+				TEST_TARGET_NAME = Kebapp;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		169F47532C09C7AC000273C5 /* Build configuration list for PBXProject "KebabCalculator" */ = {
+		16ECD8532C13613000112840 /* Build configuration list for PBXProject "Kebapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				169F477B2C09C7AE000273C5 /* Debug */,
-				169F477C2C09C7AE000273C5 /* Release */,
+				16ECD87B2C13613100112840 /* Debug */,
+				16ECD87C2C13613100112840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		169F477D2C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculator" */ = {
+		16ECD87D2C13613100112840 /* Build configuration list for PBXNativeTarget "Kebapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				169F477E2C09C7AE000273C5 /* Debug */,
-				169F477F2C09C7AE000273C5 /* Release */,
+				16ECD87E2C13613100112840 /* Debug */,
+				16ECD87F2C13613100112840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		169F47802C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorTests" */ = {
+		16ECD8802C13613100112840 /* Build configuration list for PBXNativeTarget "KebappTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				169F47812C09C7AE000273C5 /* Debug */,
-				169F47822C09C7AE000273C5 /* Release */,
+				16ECD8812C13613100112840 /* Debug */,
+				16ECD8822C13613100112840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		169F47832C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorUITests" */ = {
+		16ECD8832C13613100112840 /* Build configuration list for PBXNativeTarget "KebappUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				169F47842C09C7AE000273C5 /* Debug */,
-				169F47852C09C7AE000273C5 /* Release */,
+				16ECD8842C13613100112840 /* Debug */,
+				16ECD8852C13613100112840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 169F47502C09C7AC000273C5 /* Project object */;
+	rootObject = 16ECD8502C13613000112840 /* Project object */;
 }

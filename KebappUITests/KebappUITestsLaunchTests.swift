@@ -1,13 +1,13 @@
 //
-//  KebabCalculatorUITestsLaunchTests.swift
-//  KebabCalculatorUITests
+//  KebappUITestsLaunchTests.swift
+//  KebappUITests
 //
-//  Created by Илья Варфоломеев on 31.05.2024.
+//  Created by Илья Варфоломеев on 07.06.2024.
 //
 
 import XCTest
 
-final class KebabCalculatorUITestsLaunchTests: XCTestCase {
+final class KebappUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
