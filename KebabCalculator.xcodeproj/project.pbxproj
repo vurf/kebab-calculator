@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169F475C2C09C7AC000273C5 /* KebabCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F475B2C09C7AC000273C5 /* KebabCalculatorApp.swift */; };
+		169F475E2C09C7AC000273C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F475D2C09C7AC000273C5 /* ContentView.swift */; };
+		169F47602C09C7AD000273C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169F475F2C09C7AD000273C5 /* Assets.xcassets */; };
+		169F47642C09C7AD000273C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169F47632C09C7AD000273C5 /* Preview Assets.xcassets */; };
+		169F476E2C09C7AE000273C5 /* KebabCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F476D2C09C7AE000273C5 /* KebabCalculatorTests.swift */; };
+		169F47782C09C7AE000273C5 /* KebabCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F47772C09C7AE000273C5 /* KebabCalculatorUITests.swift */; };
+		169F477A2C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F47792C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift */; };
+		16A734DB2C0E3D3300CA6EA9 /* PeopleCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734DA2C0E3D3300CA6EA9 /* PeopleCountView.swift */; };
+		16A734DD2C0E3DBB00CA6EA9 /* DurationTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734DC2C0E3DBB00CA6EA9 /* DurationTimeView.swift */; };
+		16A734DF2C0E3E5900CA6EA9 /* MeatTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734DE2C0E3E5900CA6EA9 /* MeatTypeView.swift */; };
+		16A734E22C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A734E12C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		169F476A2C09C7AE000273C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 169F47502C09C7AC000273C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 169F47572C09C7AC000273C5;
+			remoteInfo = KebabCalculator;
+		};
+		169F47742C09C7AE000273C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 169F47502C09C7AC000273C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 169F47572C09C7AC000273C5;
+			remoteInfo = KebabCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		169F47582C09C7AC000273C5 /* KebabCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KebabCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		169F475B2C09C7AC000273C5 /* KebabCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorApp.swift; sourceTree = "<group>"; };
+		169F475D2C09C7AC000273C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		169F475F2C09C7AD000273C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		169F47612C09C7AD000273C5 /* KebabCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KebabCalculator.entitlements; sourceTree = "<group>"; };
+		169F47632C09C7AD000273C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		169F47692C09C7AE000273C5 /* KebabCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebabCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		169F476D2C09C7AE000273C5 /* KebabCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorTests.swift; sourceTree = "<group>"; };
+		169F47732C09C7AE000273C5 /* KebabCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KebabCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		169F47772C09C7AE000273C5 /* KebabCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorUITests.swift; sourceTree = "<group>"; };
+		169F47792C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KebabCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16A734DA2C0E3D3300CA6EA9 /* PeopleCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCountView.swift; sourceTree = "<group>"; };
+		16A734DC2C0E3DBB00CA6EA9 /* DurationTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationTimeView.swift; sourceTree = "<group>"; };
+		16A734DE2C0E3E5900CA6EA9 /* MeatTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTypeView.swift; sourceTree = "<group>"; };
+		16A734E12C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169F47552C09C7AC000273C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169F47662C09C7AE000273C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169F47702C09C7AE000273C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169F474F2C09C7AC000273C5 = {
+			isa = PBXGroup;
+			children = (
+				169F475A2C09C7AC000273C5 /* KebabCalculator */,
+				169F476C2C09C7AE000273C5 /* KebabCalculatorTests */,
+				169F47762C09C7AE000273C5 /* KebabCalculatorUITests */,
+				169F47592C09C7AC000273C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169F47592C09C7AC000273C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169F47582C09C7AC000273C5 /* KebabCalculator.app */,
+				169F47692C09C7AE000273C5 /* KebabCalculatorTests.xctest */,
+				169F47732C09C7AE000273C5 /* KebabCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169F475A2C09C7AC000273C5 /* KebabCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				16A734E02C0E3E9600CA6EA9 /* Styles */,
+				16A734D92C0E3D1A00CA6EA9 /* Subviews */,
+				169F475D2C09C7AC000273C5 /* ContentView.swift */,
+				169F475B2C09C7AC000273C5 /* KebabCalculatorApp.swift */,
+				169F475F2C09C7AD000273C5 /* Assets.xcassets */,
+				169F47612C09C7AD000273C5 /* KebabCalculator.entitlements */,
+				169F47622C09C7AD000273C5 /* Preview Content */,
+			);
+			path = KebabCalculator;
+			sourceTree = "<group>";
+		};
+		169F47622C09C7AD000273C5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				169F47632C09C7AD000273C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		169F476C2C09C7AE000273C5 /* KebabCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				169F476D2C09C7AE000273C5 /* KebabCalculatorTests.swift */,
+			);
+			path = KebabCalculatorTests;
+			sourceTree = "<group>";
+		};
+		169F47762C09C7AE000273C5 /* KebabCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				169F47772C09C7AE000273C5 /* KebabCalculatorUITests.swift */,
+				169F47792C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift */,
+			);
+			path = KebabCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		16A734D92C0E3D1A00CA6EA9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				16A734DA2C0E3D3300CA6EA9 /* PeopleCountView.swift */,
+				16A734DC2C0E3DBB00CA6EA9 /* DurationTimeView.swift */,
+				16A734DE2C0E3E5900CA6EA9 /* MeatTypeView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		16A734E02C0E3E9600CA6EA9 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				16A734E12C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169F47572C09C7AC000273C5 /* KebabCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169F477D2C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculator" */;
+			buildPhases = (
+				169F47542C09C7AC000273C5 /* Sources */,
+				169F47552C09C7AC000273C5 /* Frameworks */,
+				169F47562C09C7AC000273C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KebabCalculator;
+			productName = KebabCalculator;
+			productReference = 169F47582C09C7AC000273C5 /* KebabCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		169F47682C09C7AE000273C5 /* KebabCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169F47802C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorTests" */;
+			buildPhases = (
+				169F47652C09C7AE000273C5 /* Sources */,
+				169F47662C09C7AE000273C5 /* Frameworks */,
+				169F47672C09C7AE000273C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169F476B2C09C7AE000273C5 /* PBXTargetDependency */,
+			);
+			name = KebabCalculatorTests;
+			productName = KebabCalculatorTests;
+			productReference = 169F47692C09C7AE000273C5 /* KebabCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		169F47722C09C7AE000273C5 /* KebabCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169F47832C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorUITests" */;
+			buildPhases = (
+				169F476F2C09C7AE000273C5 /* Sources */,
+				169F47702C09C7AE000273C5 /* Frameworks */,
+				169F47712C09C7AE000273C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169F47752C09C7AE000273C5 /* PBXTargetDependency */,
+			);
+			name = KebabCalculatorUITests;
+			productName = KebabCalculatorUITests;
+			productReference = 169F47732C09C7AE000273C5 /* KebabCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169F47502C09C7AC000273C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					169F47572C09C7AC000273C5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					169F47682C09C7AE000273C5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 169F47572C09C7AC000273C5;
+					};
+					169F47722C09C7AE000273C5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 169F47572C09C7AC000273C5;
+					};
+				};
+			};
+			buildConfigurationList = 169F47532C09C7AC000273C5 /* Build configuration list for PBXProject "KebabCalculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 169F474F2C09C7AC000273C5;
+			productRefGroup = 169F47592C09C7AC000273C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169F47572C09C7AC000273C5 /* KebabCalculator */,
+				169F47682C09C7AE000273C5 /* KebabCalculatorTests */,
+				169F47722C09C7AE000273C5 /* KebabCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169F47562C09C7AC000273C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169F47642C09C7AD000273C5 /* Preview Assets.xcassets in Resources */,
+				169F47602C09C7AD000273C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169F47672C09C7AE000273C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169F47712C09C7AE000273C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169F47542C09C7AC000273C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A734DF2C0E3E5900CA6EA9 /* MeatTypeView.swift in Sources */,
+				16A734DB2C0E3D3300CA6EA9 /* PeopleCountView.swift in Sources */,
+				16A734DD2C0E3DBB00CA6EA9 /* DurationTimeView.swift in Sources */,
+				169F475E2C09C7AC000273C5 /* ContentView.swift in Sources */,
+				16A734E22C0E3EAC00CA6EA9 /* CheckboxToggleStyle.swift in Sources */,
+				169F475C2C09C7AC000273C5 /* KebabCalculatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169F47652C09C7AE000273C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169F476E2C09C7AE000273C5 /* KebabCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169F476F2C09C7AE000273C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169F477A2C09C7AE000273C5 /* KebabCalculatorUITestsLaunchTests.swift in Sources */,
+				169F47782C09C7AE000273C5 /* KebabCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		169F476B2C09C7AE000273C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 169F47572C09C7AC000273C5 /* KebabCalculator */;
+			targetProxy = 169F476A2C09C7AE000273C5 /* PBXContainerItemProxy */;
+		};
+		169F47752C09C7AE000273C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 169F47572C09C7AC000273C5 /* KebabCalculator */;
+			targetProxy = 169F47742C09C7AE000273C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		169F477B2C09C7AE000273C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		169F477C2C09C7AE000273C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		169F477E2C09C7AE000273C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KebabCalculator/KebabCalculator.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KebabCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F6VBW62Q5Y;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.kebab.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development ru.varfolomeev.kebab.app";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		169F477F2C09C7AE000273C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KebabCalculator/KebabCalculator.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KebabCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F6VBW62Q5Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.kebab.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore ru.varfolomeev.kebab.app";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		169F47812C09C7AE000273C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6VBW62Q5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KebabCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KebabCalculator";
+			};
+			name = Debug;
+		};
+		169F47822C09C7AE000273C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6VBW62Q5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KebabCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KebabCalculator";
+			};
+			name = Release;
+		};
+		169F47842C09C7AE000273C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6VBW62Q5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KebabCalculator;
+			};
+			name = Debug;
+		};
+		169F47852C09C7AE000273C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6VBW62Q5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.varfolomeev.KebabCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KebabCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169F47532C09C7AC000273C5 /* Build configuration list for PBXProject "KebabCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169F477B2C09C7AE000273C5 /* Debug */,
+				169F477C2C09C7AE000273C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169F477D2C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169F477E2C09C7AE000273C5 /* Debug */,
+				169F477F2C09C7AE000273C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169F47802C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169F47812C09C7AE000273C5 /* Debug */,
+				169F47822C09C7AE000273C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169F47832C09C7AE000273C5 /* Build configuration list for PBXNativeTarget "KebabCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169F47842C09C7AE000273C5 /* Debug */,
+				169F47852C09C7AE000273C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 169F47502C09C7AC000273C5 /* Project object */;
+}
