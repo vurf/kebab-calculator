@@ -9,7 +9,10 @@ import SwiftUI
 
 struct MeatTypeView: View {
     
-    @State private var svinina: Bool = true
+    @State private var isPork: Bool = true
+    @State private var isBeef: Bool = false
+    @State private var isChicken: Bool = false
+    @State private var isLamb: Bool = false
     
     var body: some View {
         CardContainer {
@@ -22,18 +25,18 @@ struct MeatTypeView: View {
 
                 HStack {
                     VStack(alignment: .leading) {
-                        Toggle("Свинина", isOn: $svinina)
+                        Toggle("Свинина", isOn: $isPork)
                             .toggleStyle(CheckboxToggleStyle())
 
-                        Toggle("Говядина", isOn: $svinina)
+                        Toggle("Говядина", isOn: $isBeef)
                             .toggleStyle(CheckboxToggleStyle())
                     }
                     Spacer()
                     VStack(alignment: .leading) {
-                        Toggle("Курица", isOn: $svinina)
+                        Toggle("Курица", isOn: $isChicken)
                             .toggleStyle(CheckboxToggleStyle())
 
-                        Toggle("Баранина", isOn: $svinina)
+                        Toggle("Баранина", isOn: $isLamb)
                             .toggleStyle(CheckboxToggleStyle())
                     }
                     Spacer()

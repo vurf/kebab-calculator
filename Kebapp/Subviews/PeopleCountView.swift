@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PeopleCountView: View {
     
-    @State private var peopleCountField: String = ""
-    @State private var vegaCountField: String = ""
-    @State private var childrenCountField: String = ""
+    @State private var peopleCount: Int = 0
+    @State private var vegaCount: Int = 0
+    @State private var childrenCount: Int = 0
     
     var body: some View {
         CardContainer {
@@ -27,10 +27,11 @@ struct PeopleCountView: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
 
-                TextField("0", text: $peopleCountField)
+                TextField("0", value: $peopleCount, format: .number)
                     .foregroundStyle(.secondary)
                     .border(.red)
                     .multilineTextAlignment(.center)
+                    .keyboardType(.numberPad)
 
                 Spacer(minLength: 16)
 
@@ -38,11 +39,12 @@ struct PeopleCountView: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
 
-                TextField("0", text: $vegaCountField)
+                TextField("0", value: $vegaCount, format: .number)
                     .foregroundStyle(.secondary)
                     .border(.red)
                     .multilineTextAlignment(.center)
                     .textFieldStyle(.roundedBorder)
+                    .keyboardType(.numberPad)
 
                 Spacer(minLength: 16)
 
@@ -50,11 +52,12 @@ struct PeopleCountView: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
 
-                TextField("0", text: $childrenCountField)
+                TextField("0", value: $childrenCount, format: .number)
                     .foregroundStyle(.secondary)
                     .border(.red)
                     .multilineTextAlignment(.center)
                     .textFieldStyle(.roundedBorder)
+                    .keyboardType(.numberPad)
 
             }
         }
