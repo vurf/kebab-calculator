@@ -19,8 +19,12 @@ struct CardContainer<Content: View>: View {
             content()
         }
         .padding()
-        .background(Color.mint.opacity(0.2))
-        .clipShape(.rect(cornerRadius: 18))
+        .background(Theme.cardBackground)
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .stroke(Theme.accent.opacity(0.15))
+        )
     }
 }
 
