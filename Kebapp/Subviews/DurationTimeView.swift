@@ -7,27 +7,30 @@
 
 import SwiftUI
 
+/// View for choosing event duration.
 struct DurationTimeView: View {
-    
-    @State private var durationTime: Int = 0
+
+    /// Shared view model with user input and calculations.
+    @ObservedObject var viewModel: CalculatorViewModel
 
     var body: some View {
         CardContainer {
             Text("Сколько собираетесь тусить")
-                .font(.title2.weight(.semibold))
+                .font(.title2.bold())
                 .foregroundStyle(.primary)
 
             Spacer(minLength: 16)
 
-            Picker("Сколько собираетесь тусить", selection: $durationTime) {
-                Text("Пару часов").tag(0)
-                Text("Весь день").tag(1)
-                Text("Два дня").tag(2)
-            }.pickerStyle(.segmented)
+            Picker("Сколько собираетесь тусить", selection: $viewModel.data.duration) {
+                ForEach(Duration.allCases) { duration in
+                    Text(duration.title).tag(duration)
+                }
+            }
+            .pickerStyle(.segmented)
         }
     }
 }
 
 #Preview {
-    DurationTimeView()
+    DurationTimeView(viewModel: CalculatorViewModel())
 }
