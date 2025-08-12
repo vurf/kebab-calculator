@@ -7,17 +7,17 @@
 
 import SwiftUI
 
+/// View with text fields to enter guests information.
 struct PeopleCountView: View {
-    
-    @State private var peopleCount: Int = 0
-    @State private var vegaCount: Int = 0
-    @State private var childrenCount: Int = 0
+
+    /// Shared view model with user input and calculations.
+    @ObservedObject var viewModel: CalculatorViewModel
 
     var body: some View {
         CardContainer {
 
             Text("Сколько будет гостей")
-                .font(.title2.weight(.semibold))
+                .font(.title2.bold())
                 .foregroundStyle(.primary)
 
             Spacer(minLength: 16)
@@ -26,7 +26,7 @@ struct PeopleCountView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            TextField("0", value: $peopleCount, format: .number)
+            TextField("0", value: adultBinding, format: .number)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.numberPad)
@@ -37,10 +37,16 @@ struct PeopleCountView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            TextField("0", value: $vegaCount, format: .number)
+            TextField("0", value: vegetarianBinding, format: .number)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.numberPad)
+
+            if viewModel.data.vegetarianAdults > viewModel.data.adultGuests {
+                Text("Не может быть больше, чем взрослых")
+                    .font(.footnote)
+                    .foregroundStyle(.red)
+            }
 
             Spacer(minLength: 16)
 
@@ -48,15 +54,41 @@ struct PeopleCountView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            TextField("0", value: $childrenCount, format: .number)
+            TextField("0", value: childrenBinding, format: .number)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.numberPad)
 
         }
     }
+
+    // MARK: - Bindings
+
+    /// Binding for adult guests count that prevents negative values.
+    private var adultBinding: Binding<Int> {
+        Binding(
+            get: { viewModel.data.adultGuests },
+            set: { viewModel.data.adultGuests = max(0, $0) }
+        )
+    }
+
+    /// Binding for vegetarian adults count that prevents negative values.
+    private var vegetarianBinding: Binding<Int> {
+        Binding(
+            get: { viewModel.data.vegetarianAdults },
+            set: { viewModel.data.vegetarianAdults = max(0, $0) }
+        )
+    }
+
+    /// Binding for children count that prevents negative values.
+    private var childrenBinding: Binding<Int> {
+        Binding(
+            get: { viewModel.data.children },
+            set: { viewModel.data.children = max(0, $0) }
+        )
+    }
 }
 
 #Preview {
-    PeopleCountView()
+    PeopleCountView(viewModel: CalculatorViewModel())
 }

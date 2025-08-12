@@ -7,43 +7,62 @@
 
 import SwiftUI
 
+/// View for choosing meat types.
 struct MeatTypeView: View {
-    
-    @State private var isPork: Bool = true
-    @State private var isBeef: Bool = false
-    @State private var isChicken: Bool = false
-    @State private var isLamb: Bool = false
+
+    /// Shared view model with user input and calculations.
+    @ObservedObject var viewModel: CalculatorViewModel
 
     var body: some View {
         CardContainer {
             Text("Какое мясо будете жарить")
-                .font(.title2.weight(.semibold))
+                .font(.title2.bold())
                 .foregroundStyle(.primary)
 
             Spacer(minLength: 16)
 
             HStack {
                 VStack(alignment: .leading) {
-                    Toggle("Свинина", isOn: $isPork)
+                    Toggle(Meat.pork.rawValue, isOn: binding(for: .pork))
                         .toggleStyle(CheckboxToggleStyle())
 
-                    Toggle("Говядина", isOn: $isBeef)
+                    Toggle(Meat.beef.rawValue, isOn: binding(for: .beef))
                         .toggleStyle(CheckboxToggleStyle())
                 }
                 Spacer()
                 VStack(alignment: .leading) {
-                    Toggle("Курица", isOn: $isChicken)
+                    Toggle(Meat.chicken.rawValue, isOn: binding(for: .chicken))
                         .toggleStyle(CheckboxToggleStyle())
 
-                    Toggle("Баранина", isOn: $isLamb)
+                    Toggle(Meat.lamb.rawValue, isOn: binding(for: .lamb))
                         .toggleStyle(CheckboxToggleStyle())
                 }
                 Spacer()
             }
+
+            if viewModel.data.selectedMeats.isEmpty {
+                Text("Выберите хотя бы один вид мяса")
+                    .font(.footnote)
+                    .foregroundStyle(.red)
+            }
         }
+    }
+
+    /// Returns binding for meat selection handling insertion and removal from set.
+    private func binding(for meat: Meat) -> Binding<Bool> {
+        Binding(
+            get: { viewModel.data.selectedMeats.contains(meat) },
+            set: { isOn in
+                if isOn {
+                    viewModel.data.selectedMeats.insert(meat)
+                } else {
+                    viewModel.data.selectedMeats.remove(meat)
+                }
+            }
+        )
     }
 }
 
 #Preview {
-    MeatTypeView()
+    MeatTypeView(viewModel: CalculatorViewModel())
 }

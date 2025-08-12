@@ -17,7 +17,10 @@
 		16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8862C1361ED00112840 /* CheckboxToggleStyle.swift */; };
 		16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8882C1361ED00112840 /* DurationTimeView.swift */; };
 		16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD8892C1361ED00112840 /* MeatTypeView.swift */; };
-		16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD88A2C1361ED00112840 /* PeopleCountView.swift */; };
+                16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECD88A2C1361ED00112840 /* PeopleCountView.swift */; };
+                b3d22a76b8d6921307d8a563 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */; };
+                19df5e1ccb51a97badfd2667 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371035304508c71b33d8fcb /* CalculatorViewModel.swift */; };
+                c1971352fb675b0006ef0864 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8d65a25fb15f9482c46e3cdf /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,10 @@
 		16ECD8862C1361ED00112840 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		16ECD8882C1361ED00112840 /* DurationTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTimeView.swift; sourceTree = "<group>"; };
 		16ECD8892C1361ED00112840 /* MeatTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatTypeView.swift; sourceTree = "<group>"; };
-		16ECD88A2C1361ED00112840 /* PeopleCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCountView.swift; sourceTree = "<group>"; };
+                16ECD88A2C1361ED00112840 /* PeopleCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCountView.swift; sourceTree = "<group>"; };
+                d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+                6371035304508c71b33d8fcb /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+                8d65a25fb15f9482c46e3cdf /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +106,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		16ECD85A2C13613000112840 /* Kebapp */ = {
-			isa = PBXGroup;
-			children = (
-				16ECD8872C1361ED00112840 /* Styles */,
-				16ECD88B2C1361ED00112840 /* Subviews */,
-				16ECD85B2C13613000112840 /* KebappApp.swift */,
-				16ECD85D2C13613000112840 /* ContentView.swift */,
-				16ECD85F2C13613100112840 /* Assets.xcassets */,
-				16ECD8612C13613100112840 /* Kebapp.entitlements */,
-				16ECD8622C13613100112840 /* Preview Content */,
-			);
+               16ECD85A2C13613000112840 /* Kebapp */ = {
+                       isa = PBXGroup;
+                       children = (
+                               16ECD8872C1361ED00112840 /* Styles */,
+                               16ECD88B2C1361ED00112840 /* Subviews */,
+                               112864c23cff4c0a0cc29627 /* Models */,
+                               07e882b7b73d15867229fd09 /* ViewModels */,
+                               16ECD85B2C13613000112840 /* KebappApp.swift */,
+                               16ECD85D2C13613000112840 /* ContentView.swift */,
+                               16ECD85F2C13613100112840 /* Assets.xcassets */,
+                               16ECD8612C13613100112840 /* Kebapp.entitlements */,
+                               16ECD8622C13613100112840 /* Preview Content */,
+                       );
 			path = Kebapp;
 			sourceTree = "<group>";
 		};
@@ -147,16 +155,33 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		16ECD88B2C1361ED00112840 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				16ECD8882C1361ED00112840 /* DurationTimeView.swift */,
-				16ECD8892C1361ED00112840 /* MeatTypeView.swift */,
-				16ECD88A2C1361ED00112840 /* PeopleCountView.swift */,
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
+               16ECD88B2C1361ED00112840 /* Subviews */ = {
+                       isa = PBXGroup;
+                       children = (
+                               16ECD8882C1361ED00112840 /* DurationTimeView.swift */,
+                               16ECD8892C1361ED00112840 /* MeatTypeView.swift */,
+                               16ECD88A2C1361ED00112840 /* PeopleCountView.swift */,
+                               8d65a25fb15f9482c46e3cdf /* ResultView.swift */,
+                       );
+                       path = Subviews;
+                       sourceTree = "<group>";
+               };
+                112864c23cff4c0a0cc29627 /* Models */ = {
+                        isa = PBXGroup;
+                        children = (
+                                d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */,
+                        );
+                        path = Models;
+                        sourceTree = "<group>";
+                };
+                07e882b7b73d15867229fd09 /* ViewModels */ = {
+                        isa = PBXGroup;
+                        children = (
+                                6371035304508c71b33d8fcb /* CalculatorViewModel.swift */,
+                        );
+                        path = ViewModels;
+                        sourceTree = "<group>";
+                };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,13 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */,
-				16ECD85E2C13613000112840 /* ContentView.swift in Sources */,
-				16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */,
-				16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */,
-				16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */,
-				16ECD85C2C13613000112840 /* KebappApp.swift in Sources */,
-			);
+                               16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */,
+                               16ECD85E2C13613000112840 /* ContentView.swift in Sources */,
+                               16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */,
+                               16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */,
+                               16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */,
+                               16ECD85C2C13613000112840 /* KebappApp.swift in Sources */,
+                               b3d22a76b8d6921307d8a563 /* CalculatorModel.swift in Sources */,
+                               19df5e1ccb51a97badfd2667 /* CalculatorViewModel.swift in Sources */,
+                               c1971352fb675b0006ef0864 /* ResultView.swift in Sources */,
+                       );
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		16ECD8652C13613100112840 /* Sources */ = {
