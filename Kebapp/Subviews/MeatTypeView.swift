@@ -13,15 +13,15 @@ struct MeatTypeView: View {
     @State private var isBeef: Bool = false
     @State private var isChicken: Bool = false
     @State private var isLamb: Bool = false
-    
+
     var body: some View {
-        VStack(alignment: .leading) {
+        CardContainer {
             Text("Какое мясо будете жарить")
                 .font(.title2.weight(.semibold))
                 .foregroundStyle(.primary)
-                
+
             Spacer(minLength: 16)
-            
+
             HStack {
                 VStack(alignment: .leading) {
                     Toggle("Свинина", isOn: $isPork)
@@ -41,9 +41,6 @@ struct MeatTypeView: View {
                 Spacer()
             }
         }
-        .padding()
-        .background(Color.mint.opacity(0.2))
-        .clipShape(.rect(cornerRadius: 18))
     }
 }
 
