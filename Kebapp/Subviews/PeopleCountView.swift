@@ -27,9 +27,8 @@ struct PeopleCountView: View {
                 .foregroundStyle(.secondary)
 
             TextField("0", value: $peopleCount, format: .number)
-                .foregroundStyle(.secondary)
-                .border(.red)
                 .multilineTextAlignment(.center)
+                .textFieldStyle(.roundedBorder)
                 .keyboardType(.numberPad)
 
             Spacer(minLength: 16)
@@ -39,8 +38,6 @@ struct PeopleCountView: View {
                 .foregroundStyle(.secondary)
 
             TextField("0", value: $vegaCount, format: .number)
-                .foregroundStyle(.secondary)
-                .border(.red)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.numberPad)
@@ -52,8 +49,6 @@ struct PeopleCountView: View {
                 .foregroundStyle(.secondary)
 
             TextField("0", value: $childrenCount, format: .number)
-                .foregroundStyle(.secondary)
-                .border(.red)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.numberPad)
