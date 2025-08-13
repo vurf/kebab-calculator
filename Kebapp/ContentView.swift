@@ -14,20 +14,26 @@ struct ContentView: View {
     @StateObject private var viewModel = CalculatorViewModel()
     /// View model providing shareable text.
     @StateObject private var shareViewModel = ShareViewModel()
+    /// History view model coming from environment.
+    @EnvironmentObject private var historyViewModel: HistoryViewModel
 
     var body: some View {
-        ScrollView {
-            PeopleCountView(viewModel: viewModel)
-            DurationTimeView(viewModel: viewModel)
-            MeatTypeView(viewModel: viewModel)
-            ResultView(viewModel: viewModel)
-            ShareView(viewModel: shareViewModel)
-
-            // MARK: - Future Scope
-            // TODO: Сохранение истории расчётов
-            // TODO: Добавить гарниры
+        NavigationStack {
+            ScrollView {
+                PeopleCountView(viewModel: viewModel)
+                DurationTimeView(viewModel: viewModel)
+                MeatTypeView(viewModel: viewModel)
+                ResultView(viewModel: viewModel)
+                ShareView(viewModel: shareViewModel)
+            }
+            .padding()
+            .navigationTitle("Калькулятор")
+            .toolbar {
+                NavigationLink(destination: HistoryView(calculatorViewModel: viewModel)) {
+                    Image(systemName: "clock")
+                }
+            }
         }
-        .padding()
     }
 }
 
