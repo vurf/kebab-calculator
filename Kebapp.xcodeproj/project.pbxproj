@@ -30,8 +30,10 @@
 		B1C2D3E51F2A001122334456 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D51E2F001122334456 /* ShareView.swift */; };
 		B1C2D3E61F2A001122334457 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D61E2F001122334457 /* ShareViewModel.swift */; };
 		B1C2D3E71F2A001122334458 /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D71E2F001122334458 /* ShareService.swift */; };
-		b3d22a76b8d6921307d8a563 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */; };
-		c1971352fb675b0006ef0864 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8d65a25fb15f9482c46e3cdf /* ResultView.swift */; };
+b3d22a76b8d6921307d8a563 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */; };
+c1971352fb675b0006ef0864 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8d65a25fb15f9482c46e3cdf /* ResultView.swift */; };
+DEADBEEF0000000000000002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000001 /* SettingsView.swift */; };
+DEADBEEF0000000000000004 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADBEEF0000000000000003 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +81,10 @@
 		A1B2C3D41E2F001122334455 /* ShareButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonStyle.swift; sourceTree = "<group>"; };
 		A1B2C3D51E2F001122334456 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		A1B2C3D61E2F001122334457 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
-		A1B2C3D71E2F001122334458 /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
-		d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+A1B2C3D71E2F001122334458 /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
+d2318d1cc23f11ee3ffd208e /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+DEADBEEF0000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+DEADBEEF0000000000000003 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07e882b7b73d15867229fd09 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				167F6CA62E4C8A11001CDC44 /* HistoryViewModel.swift */,
-				6371035304508c71b33d8fcb /* CalculatorViewModel.swift */,
-				A1B2C3D61E2F001122334457 /* ShareViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
+07e882b7b73d15867229fd09 /* ViewModels */ = {
+isa = PBXGroup;
+children = (
+167F6CA62E4C8A11001CDC44 /* HistoryViewModel.swift */,
+6371035304508c71b33d8fcb /* CalculatorViewModel.swift */,
+A1B2C3D61E2F001122334457 /* ShareViewModel.swift */,
+DEADBEEF0000000000000003 /* SettingsViewModel.swift */,
+);
+path = ViewModels;
+sourceTree = "<group>";
+};
 		112864c23cff4c0a0cc29627 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,26 +169,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		16ECD85A2C13613000112840 /* Kebapp */ = {
-			isa = PBXGroup;
-			children = (
-				167F6C9F2E4C89CC001CDC44 /* History */,
-				167F6CA02E4C89CC001CDC44 /* Persistence.swift */,
-				167F6C8D2E4C7F59001CDC44 /* Components */,
-				16ECD8872C1361ED00112840 /* Styles */,
-				16ECD88B2C1361ED00112840 /* Subviews */,
-				112864c23cff4c0a0cc29627 /* Models */,
-				07e882b7b73d15867229fd09 /* ViewModels */,
-				C1D2E3F41A2B001122334455 /* Services */,
-				16ECD85B2C13613000112840 /* KebappApp.swift */,
-				16ECD85D2C13613000112840 /* ContentView.swift */,
-				16ECD85F2C13613100112840 /* Assets.xcassets */,
-				16ECD8612C13613100112840 /* Kebapp.entitlements */,
-				16ECD8622C13613100112840 /* Preview Content */,
-			);
-			path = Kebapp;
-			sourceTree = "<group>";
-		};
+16ECD85A2C13613000112840 /* Kebapp */ = {
+isa = PBXGroup;
+children = (
+167F6C9F2E4C89CC001CDC44 /* History */,
+167F6CA02E4C89CC001CDC44 /* Persistence.swift */,
+167F6C8D2E4C7F59001CDC44 /* Components */,
+16ECD8872C1361ED00112840 /* Styles */,
+16ECD88B2C1361ED00112840 /* Subviews */,
+DEADBEEF0000000000000005 /* Settings */,
+112864c23cff4c0a0cc29627 /* Models */,
+07e882b7b73d15867229fd09 /* ViewModels */,
+C1D2E3F41A2B001122334455 /* Services */,
+16ECD85B2C13613000112840 /* KebappApp.swift */,
+16ECD85D2C13613000112840 /* ContentView.swift */,
+16ECD85F2C13613100112840 /* Assets.xcassets */,
+16ECD8612C13613100112840 /* Kebapp.entitlements */,
+16ECD8622C13613100112840 /* Preview Content */,
+);
+path = Kebapp;
+sourceTree = "<group>";
+};
 		16ECD8622C13613100112840 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,19 +225,27 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		16ECD88B2C1361ED00112840 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				16ECD8882C1361ED00112840 /* DurationTimeView.swift */,
-				16ECD8892C1361ED00112840 /* MeatTypeView.swift */,
-				16ECD88A2C1361ED00112840 /* PeopleCountView.swift */,
-				8d65a25fb15f9482c46e3cdf /* ResultView.swift */,
-				A1B2C3D51E2F001122334456 /* ShareView.swift */,
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
-		C1D2E3F41A2B001122334455 /* Services */ = {
+16ECD88B2C1361ED00112840 /* Subviews */ = {
+isa = PBXGroup;
+children = (
+16ECD8882C1361ED00112840 /* DurationTimeView.swift */,
+16ECD8892C1361ED00112840 /* MeatTypeView.swift */,
+16ECD88A2C1361ED00112840 /* PeopleCountView.swift */,
+8d65a25fb15f9482c46e3cdf /* ResultView.swift */,
+A1B2C3D51E2F001122334456 /* ShareView.swift */,
+);
+path = Subviews;
+sourceTree = "<group>";
+};
+DEADBEEF0000000000000005 /* Settings */ = {
+isa = PBXGroup;
+children = (
+DEADBEEF0000000000000001 /* SettingsView.swift */,
+);
+path = Settings;
+sourceTree = "<group>";
+};
+C1D2E3F41A2B001122334455 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				A1B2C3D71E2F001122334458 /* ShareService.swift */,
@@ -368,28 +382,30 @@
 		16ECD8542C13613000112840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (
-				167F6CA52E4C89ED001CDC44 /* CalculationHistoryItem.swift in Sources */,
-				16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */,
-				16ECD85E2C13613000112840 /* ContentView.swift in Sources */,
-				16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */,
-				16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */,
-				16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */,
-				16ECD85C2C13613000112840 /* KebappApp.swift in Sources */,
-				b3d22a76b8d6921307d8a563 /* CalculatorModel.swift in Sources */,
-				19df5e1ccb51a97badfd2667 /* CalculatorViewModel.swift in Sources */,
-				c1971352fb675b0006ef0864 /* ResultView.swift in Sources */,
-				B1C2D3E41F2A001122334455 /* ShareButtonStyle.swift in Sources */,
-				B1C2D3E51F2A001122334456 /* ShareView.swift in Sources */,
-				167F6C8E2E4C7F59001CDC44 /* CardContainer.swift in Sources */,
-				167F6CA12E4C89CC001CDC44 /* HistoryView.swift in Sources */,
-				167F6CA22E4C89CC001CDC44 /* HistoryDetailView.swift in Sources */,
-				167F6CA72E4C8A11001CDC44 /* HistoryViewModel.swift in Sources */,
-				167F6CA32E4C89CC001CDC44 /* Persistence.swift in Sources */,
-				B1C2D3E61F2A001122334457 /* ShareViewModel.swift in Sources */,
-				B1C2D3E71F2A001122334458 /* ShareService.swift in Sources */,
-				167F6C8B2E4C7F48001CDC44 /* Theme.swift in Sources */,
-			);
+files = (
+167F6CA52E4C89ED001CDC44 /* CalculationHistoryItem.swift in Sources */,
+16ECD88E2C1361ED00112840 /* MeatTypeView.swift in Sources */,
+16ECD85E2C13613000112840 /* ContentView.swift in Sources */,
+16ECD88D2C1361ED00112840 /* DurationTimeView.swift in Sources */,
+16ECD88F2C1361ED00112840 /* PeopleCountView.swift in Sources */,
+16ECD88C2C1361ED00112840 /* CheckboxToggleStyle.swift in Sources */,
+16ECD85C2C13613000112840 /* KebappApp.swift in Sources */,
+b3d22a76b8d6921307d8a563 /* CalculatorModel.swift in Sources */,
+19df5e1ccb51a97badfd2667 /* CalculatorViewModel.swift in Sources */,
+c1971352fb675b0006ef0864 /* ResultView.swift in Sources */,
+B1C2D3E41F2A001122334455 /* ShareButtonStyle.swift in Sources */,
+B1C2D3E51F2A001122334456 /* ShareView.swift in Sources */,
+167F6C8E2E4C7F59001CDC44 /* CardContainer.swift in Sources */,
+167F6CA12E4C89CC001CDC44 /* HistoryView.swift in Sources */,
+167F6CA22E4C89CC001CDC44 /* HistoryDetailView.swift in Sources */,
+167F6CA72E4C8A11001CDC44 /* HistoryViewModel.swift in Sources */,
+167F6CA32E4C89CC001CDC44 /* Persistence.swift in Sources */,
+B1C2D3E61F2A001122334457 /* ShareViewModel.swift in Sources */,
+B1C2D3E71F2A001122334458 /* ShareService.swift in Sources */,
+167F6C8B2E4C7F48001CDC44 /* Theme.swift in Sources */,
+DEADBEEF0000000000000002 /* SettingsView.swift in Sources */,
+DEADBEEF0000000000000004 /* SettingsViewModel.swift in Sources */,
+);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		16ECD8652C13613100112840 /* Sources */ = {
