@@ -12,6 +12,8 @@ struct ContentView: View {
 
     /// Main view model used across subviews.
     @StateObject private var viewModel = CalculatorViewModel()
+    /// View model providing shareable text.
+    @StateObject private var shareViewModel = ShareViewModel()
 
     var body: some View {
         ScrollView {
@@ -19,10 +21,10 @@ struct ContentView: View {
             DurationTimeView(viewModel: viewModel)
             MeatTypeView(viewModel: viewModel)
             ResultView(viewModel: viewModel)
+            ShareView(viewModel: shareViewModel)
 
             // MARK: - Future Scope
             // TODO: Сохранение истории расчётов
-            // TODO: Шаринг результатов
             // TODO: Добавить гарниры
         }
         .padding()
