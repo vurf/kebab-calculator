@@ -12,6 +12,8 @@ struct ResultView: View {
 
     /// Shared view model with user input and calculations.
     @ObservedObject var viewModel: CalculatorViewModel
+    /// History view model used for saving calculations.
+    @EnvironmentObject var historyViewModel: HistoryViewModel
 
     var body: some View {
         CardContainer {
@@ -44,6 +46,22 @@ struct ResultView: View {
                         Spacer()
                         Text("\(viewModel.portionPerPerson, specifier: "%.2f") кг")
                     }
+
+                    Button("Сохранить расчёт") {
+                        let item = CalculationHistoryItem(
+                            id: UUID(),
+                            date: Date(),
+                            adults: viewModel.data.adultGuests,
+                            nonMeatEaters: viewModel.data.vegetarianAdults,
+                            kids: viewModel.data.children,
+                            duration: viewModel.data.duration.title,
+                            meat: viewModel.distribution.reduce(into: [:]) { $0[$1.key.rawValue] = $1.value },
+                            totalWeight: viewModel.totalWeight,
+                            portionPerPerson: viewModel.portionPerPerson
+                        )
+                        historyViewModel.save(item: item)
+                    }
+                    .buttonStyle(.bordered)
                 }
             } else {
                 Text("Заполните все поля корректно")
