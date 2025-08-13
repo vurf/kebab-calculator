@@ -26,7 +26,7 @@ struct ResultView: View {
                     HStack {
                         Text("Общий вес")
                         Spacer()
-                        Text("\(viewModel.totalWeight, specifier: \"%.2f\") кг")
+                        Text(String(format: "%.2f кг", viewModel.totalWeight))
                     }
 
                     ForEach(Array(viewModel.distribution.keys), id: \.self) { meat in
@@ -34,7 +34,7 @@ struct ResultView: View {
                             HStack {
                                 Text(meat.rawValue)
                                 Spacer()
-                                Text("\(weight, specifier: \"%.2f\") кг")
+                                Text("\(weight, specifier: "%.2f") кг")
                             }
                         }
                     }
@@ -42,7 +42,7 @@ struct ResultView: View {
                     HStack {
                         Text("На человека")
                         Spacer()
-                        Text("\(viewModel.portionPerPerson, specifier: \"%.2f\") кг")
+                        Text("\(viewModel.portionPerPerson, specifier: "%.2f") кг")
                     }
                 }
             } else {
