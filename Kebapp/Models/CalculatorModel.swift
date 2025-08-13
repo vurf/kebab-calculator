@@ -17,14 +17,6 @@ enum Duration: Int, CaseIterable, Identifiable {
         }
     }
 
-    /// Coefficient applied to the base adult portion.
-    var coefficient: Double {
-        switch self {
-        case .coupleHours: return 1.0
-        case .wholeDay: return 1.75
-        case .twoDays: return 2.5
-        }
-    }
 }
 
 /// Types of meat available for selection.

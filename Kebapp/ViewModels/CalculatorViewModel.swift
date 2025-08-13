@@ -1,19 +1,35 @@
 import Foundation
+import Combine
 
 /// ViewModel responsible for meat calculation logic and validation.
 final class CalculatorViewModel: ObservableObject {
     @Published var data = CalculatorData()
 
-    /// Base portion for one adult for a couple of hours.
-    private let adultPortionBase: Double = 0.4
+    private let settings: SettingsViewModel
+    private var cancellables = Set<AnyCancellable>()
+
+    init(settings: SettingsViewModel = SettingsViewModel()) {
+        self.settings = settings
+        // Propagate changes from settings to refresh computed properties
+        settings.objectWillChange
+            .sink { [weak self] _ in self?.objectWillChange.send() }
+            .store(in: &cancellables)
+    }
 
     /// Portion for one adult depending on the selected duration.
     var adultPortion: Double {
-        adultPortionBase * data.duration.coefficient
+        switch data.duration {
+        case .coupleHours:
+            return settings.coupleHoursPortion / 1000
+        case .wholeDay:
+            return settings.wholeDayPortion / 1000
+        case .twoDays:
+            return settings.twoDaysPortion / 1000
+        }
     }
 
     /// Portion for one child.
-    var childPortion: Double { adultPortion * 0.5 }
+    var childPortion: Double { adultPortion * settings.childCoefficient }
 
     /// Total required meat weight in kilograms.
     var totalWeight: Double {

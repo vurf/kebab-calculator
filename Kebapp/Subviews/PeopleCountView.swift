@@ -22,42 +22,30 @@ struct PeopleCountView: View {
 
             Spacer(minLength: 16)
 
-            Text("Взрослых")
+            Text("Взрослых: \(viewModel.data.adultGuests)")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            TextField("0", value: adultBinding, format: .number)
-                .multilineTextAlignment(.center)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+            Stepper("", value: adultBinding, in: 0...100)
+                .tint(Theme.accent)
 
             Spacer(minLength: 16)
 
-            Text("Из них не ест мясо")
+            Text("Из них не ест мясо: \(viewModel.data.vegetarianAdults)")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            TextField("0", value: vegetarianBinding, format: .number)
-                .multilineTextAlignment(.center)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
-
-            if viewModel.data.vegetarianAdults > viewModel.data.adultGuests {
-                Text("Не может быть больше, чем взрослых")
-                    .font(.footnote)
-                    .foregroundStyle(.red)
-            }
+            Stepper("", value: vegetarianBinding, in: 0...viewModel.data.adultGuests)
+                .tint(Theme.accent)
 
             Spacer(minLength: 16)
 
-            Text("Детей")
+            Text("Детей: \(viewModel.data.children)")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            TextField("0", value: childrenBinding, format: .number)
-                .multilineTextAlignment(.center)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+            Stepper("", value: childrenBinding, in: 0...100)
+                .tint(Theme.accent)
 
         }
     }
@@ -68,7 +56,12 @@ struct PeopleCountView: View {
     private var adultBinding: Binding<Int> {
         Binding(
             get: { viewModel.data.adultGuests },
-            set: { viewModel.data.adultGuests = max(0, $0) }
+            set: {
+                viewModel.data.adultGuests = max(0, $0)
+                if viewModel.data.vegetarianAdults > viewModel.data.adultGuests {
+                    viewModel.data.vegetarianAdults = viewModel.data.adultGuests
+                }
+            }
         )
     }
 
