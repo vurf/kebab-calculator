@@ -1,61 +1,64 @@
-import Foundation
-import Combine
+import UIKit
 
-/// ViewModel responsible for meat calculation logic and validation.
-final class CalculatorViewModel: ObservableObject {
-    @Published var data = CalculatorData()
+// MARK: - Coordinator
 
-    private let settings: SettingsViewModel
-    private var cancellables = Set<AnyCancellable>()
+protocol Coordinator: AnyObject { func start() }
 
-    init(settings: SettingsViewModel = SettingsViewModel()) {
-        self.settings = settings
-        // Propagate changes from settings to refresh computed properties
-        settings.objectWillChange
-            .sink { [weak self] _ in self?.objectWillChange.send() }
-            .store(in: &cancellables)
+final class AppCoordinator: Coordinator {
+    private let window: UIWindow
+    private let nav    = UINavigationController()
+    private var inputs = BBQInputs()
+
+    init(window: UIWindow) {
+        self.window = window
+        nav.setNavigationBarHidden(true, animated: false)
+        nav.view.backgroundColor = DS.Colors.bg1
     }
 
-    /// Portion for one adult depending on the selected duration.
-    var adultPortion: Double {
-        switch data.duration {
-        case .coupleHours:
-            return settings.coupleHoursPortion / 1000
-        case .wholeDay:
-            return settings.wholeDayPortion / 1000
-        case .twoDays:
-            return settings.twoDaysPortion / 1000
+    func start() {
+        window.rootViewController = nav
+        pushHero()
+    }
+
+    // MARK: Screens
+
+    private func pushHero() {
+        let p  = HeroPresenter()
+        let vc = HeroViewController(presenter: p)
+        p.view     = vc
+        p.onStart  = { [weak self] in self?.pushQuestions() }
+        nav.setViewControllers([vc], animated: false)
+    }
+
+    private func pushQuestions() {
+        let p  = QuestionFlowPresenter(inputs: inputs)
+        let vc = QuestionFlowViewController(presenter: p)
+        p.view      = vc
+        p.onComplete = { [weak self] completed in
+            self?.inputs = completed
+            self?.pushSignature()
         }
+        nav.pushViewController(vc, animated: true)
     }
 
-    /// Portion for one child.
-    var childPortion: Double { adultPortion * settings.childCoefficient }
-
-    /// Total required meat weight in kilograms.
-    var totalWeight: Double {
-        let adults = max(data.adultGuests - data.vegetarianAdults, 0)
-        let kids = max(data.children, 0)
-        return (Double(adults) * adultPortion) + (Double(kids) * childPortion)
+    private func pushSignature() {
+        let p  = SignaturePresenter(inputs: inputs)
+        let vc = SignatureViewController(presenter: p)
+        p.view   = vc
+        p.onDone = { [weak self] in self?.pushResults() }
+        nav.pushViewController(vc, animated: true)
     }
 
-    /// Portion per person (only those who eat meat).
-    var portionPerPerson: Double {
-        let eaters = max(data.adultGuests - data.vegetarianAdults, 0) + data.children
-        guard eaters > 0 else { return 0 }
-        return totalWeight / Double(eaters)
-    }
-
-    /// Distribution of meat weight across selected meat types.
-    var distribution: [Meat: Double] {
-        guard !data.selectedMeats.isEmpty else { return [:] }
-        let share = totalWeight / Double(data.selectedMeats.count)
-        var result: [Meat: Double] = [:]
-        data.selectedMeats.forEach { result[$0] = share }
-        return result
-    }
-
-    /// Validation for input data.
-    var isValid: Bool {
-        data.adultGuests >= data.vegetarianAdults && !data.selectedMeats.isEmpty
+    private func pushResults() {
+        let result = BBQCalculator.calculate(inputs)
+        let p  = ResultsPresenter(inputs: inputs, result: result)
+        let vc = ResultsViewController(presenter: p)
+        p.view      = vc
+        p.onRestart = { [weak self] in
+            self?.inputs = BBQInputs()
+            self?.nav.popToRootViewController(animated: false)
+            self?.pushHero()
+        }
+        nav.pushViewController(vc, animated: true)
     }
 }

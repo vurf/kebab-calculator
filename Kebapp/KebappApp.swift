@@ -1,23 +1,22 @@
-//
-//  KebappApp.swift
-//  Kebapp
-//
-//  Created by Илья Варфоломеев on 07.06.2024.
-//
-
-import SwiftUI
+import UIKit
 
 @main
-struct KebappApp: App {
-    private let persistence = PersistenceController.shared
-    @StateObject private var historyViewModel = HistoryViewModel()
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistence.container.viewContext)
-                .environmentObject(historyViewModel)
-                .tint(Theme.accent)
-        }
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool { true }
+
+    // Programmatically wire SceneDelegate so no Info.plist change is needed
+    func application(
+        _ application: UIApplication,
+        configurationForConnecting connectingSceneSession: UISceneSession,
+        options: UIScene.ConnectionOptions
+    ) -> UISceneConfiguration {
+        let config = UISceneConfiguration(name: "Default Configuration",
+                                          sessionRole: connectingSceneSession.role)
+        config.delegateClass = SceneDelegate.self
+        return config
     }
 }
